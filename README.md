@@ -1,0 +1,1 @@
+App de horoscopo para curso intermedio de android de AristiDevs
