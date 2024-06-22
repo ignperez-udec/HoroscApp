@@ -55,6 +55,7 @@ dependencies {
 
     //versión de la biblioteca (es buena practica, ya que asi las dos libreria siempre mantienen la misma versión)
     val navVersion = "2.7.1"
+    val cameraVersion = "1.2.3"
 
     //NavComponent (permite la navegación sensilla entre fragments)
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
@@ -68,6 +69,13 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.3.1") //interceptor de queries (la intercepta para agregar info antes de mandar)
+
+    //Camera X
+    implementation ("androidx.camera:camera-core:${cameraVersion}")
+    implementation ("androidx.camera:camera-camera2:${cameraVersion}")
+    implementation ("androidx.camera:camera-lifecycle:${cameraVersion}")
+    implementation ("androidx.camera:camera-view:${cameraVersion}")
+    implementation ("androidx.camera:camera-extensions:${cameraVersion}")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
