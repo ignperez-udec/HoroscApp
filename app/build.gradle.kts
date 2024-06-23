@@ -82,7 +82,14 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    testImplementation(libs.junit)
+
+    //esto sólo funciona en directorio test (UnitTest)
+    testImplementation("junit:junit:4.13.2")
+    testImplementation ("io.kotlintest:kotlintest-runner-junit5:3.4.2")
+    testImplementation ("io.mockk:mockk:1.12.3") //sirve para moquer una clase o respuesta
+
+
+    //esto sólo funciona en directorio androidTest (InstrumentedTest)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
